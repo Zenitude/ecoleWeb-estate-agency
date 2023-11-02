@@ -33,7 +33,7 @@ export const ServicesContainer = styled.main`
         width: 100%;
         max-width: 1200px;
         min-width: 240px;
-        margin-block: 20px;
+        margin: 20px auto;
 
         article {
             width: 30%;
@@ -60,6 +60,8 @@ export const ServicesContainer = styled.main`
         padding: 15px;
         border-radius: 10px;
         font-size: 1.2rem;
+        width: fit-content;
+        margin: 0 auto;
 
         &:hover {
             background-color: var(--main-black);

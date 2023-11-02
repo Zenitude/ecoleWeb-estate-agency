@@ -25,8 +25,7 @@ export const ContactContainer = styled.main`
         width: 100%;
         max-width: 1200px;
         min-width: 240px;
-        margin-top: 20px;
-        margin-bottom: 100px;
+        margin: 20px auto 100px;       
 
         article {
             width: 30%;
