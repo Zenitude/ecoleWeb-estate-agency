@@ -2,6 +2,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createGlobalStyle } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 
 const GlobalStyle = createGlobalStyle`
   *, ::before, ::after {
@@ -23,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, #root {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: var(--font-text);
     background-color: var(--main-white);
   }
@@ -35,7 +37,9 @@ const GlobalStyle = createGlobalStyle`
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <GlobalStyle />
-    
+    <BrowserRouter>
+      <GlobalStyle />
+      <Layout />
+    </BrowserRouter>
   </React.StrictMode>,
 )
